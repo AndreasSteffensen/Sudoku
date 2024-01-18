@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+#errors {
+    color: tomato;
+}
+
+#board {
+    width: 450;
+    height: 450;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgray;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-start {
+    background-color: wheat;
+}
+
+.tile-wrong {
+    color: tomato;
+}
+
+.tile-right {
+    color: black;
+}
+
+#digits {
+    width: 450;
+    height: 50;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number{
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected {
+    background-color: lightskyblue;
+}
+
+.borderline-hori {
+    border-bottom: 1px solid black;
+}
+
+.borderline-vert {
+    border-right: 1px solid black;
+}

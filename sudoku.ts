@@ -2,6 +2,9 @@ var numSelected = null;
 var tileSelected = null;
 
 var errors = 0; 
+var score = 0;
+var difficulty = 1;
+var pointsPrNumb = 50;
 
 var board = [
     "---------",
@@ -83,14 +86,18 @@ function selectTile() {
                 this.innerText = numSelected.id;
                 this.classList.add("tile-right");
                 this.classList.remove("tile-wrong");
+                score += (pointsPrNumb * difficulty);
+                document.getElementById("score")!.innerText = score.toString();
             }
             else
             {
-                errors += 1; 
+                errors += 1;
                 document.getElementById("errors")!.innerText = errors.toString();
                 this.innerText = numSelected.id;
                 this.classList.add("tile-wrong");
-
+                if (errors >= 3) {
+                    alert("Game Over");
+                }
             }
         }
         else {

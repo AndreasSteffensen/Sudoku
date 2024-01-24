@@ -7,6 +7,20 @@ hr {
     width: 500px;
 }
 
+#scoreboard {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#text {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
 #errors {
     color: tomato;
 }
